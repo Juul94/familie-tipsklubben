@@ -1,0 +1,31 @@
+{
+  "cli": {
+    "version": ">= 19.0.8",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "channel": "development"
+    },
+    "preview": {
+      "distribution": "internal",
+      "channel": "preview"
+    },
+    "production": {
+      "autoIncrement": true,
+      "channel": "production"
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "YOUR_APP_STORE_CONNECT_APP_ID",
+        "ascApiKeyPath": "./keys/AuthKey.p8",
+        "ascApiKeyId": "YOUR_KEY_ID",
+        "ascApiKeyIssuerId": "YOUR_ISSUER_ID"
+      }
+    }
+  }
+}
